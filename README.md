@@ -1,13 +1,13 @@
-# Project_1
+# Spotify Project
 Group Project 1
 
-Project Proposal
+# Project Proposal
 
-Project Title: 
+# Project Title: 
 Spotify Stars 
 
-Team Members: 
-Molly Burns, Sydney Cohen, B Slone, Maite Rivas
+# Team Members: 
+Molly Burns, Sydney Cohen, Maite Rivas,  B Slone
 
 # Project Description/Outline: 
 Analyze various audio features of publicly available spotify top charts for the week of June 2nd 2022 to see how a given audio feature is represented in top songs 
