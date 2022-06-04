@@ -1,7 +1,6 @@
-# Spotify Project
+# Spotify Project Proposal
 Group Project 1
 
-# Project Proposal
 
 # Project Title: 
 Spotify Stars 
