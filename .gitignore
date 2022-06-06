@@ -9,7 +9,11 @@ __pycache__/
 # DS_Store
 *.DS_Store
 
+<<<<<<< HEAD
 #config files
+=======
+#config file
+>>>>>>> 0e1046dc2278bdbc8382890f82a84a75064c8c0f
 config.py
 
 # Distribution / packaging
