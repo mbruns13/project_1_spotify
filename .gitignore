@@ -9,7 +9,7 @@ __pycache__/
 # DS_Store
 *.DS_Store
 
-#config file
+#config files
 config.py
 
 # Distribution / packaging
