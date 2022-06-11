@@ -15,7 +15,7 @@ Analyze various audio features of publicly available spotify top charts for the 
 * Looking at the relationship between valance and energy of top songs 
 * Looking at the relationship between danceability and energy of top songs
 * Looking at the relationship between tempo and danceability of global top songs 
-* Looking at the relationship between duration of top songs by country 
+* Looking at the relationship between duration of top songs and other audio features 
 
 ## Datasets to Be Used:
 * Publicly available spotify top charts found at charts.spotify.com/home
