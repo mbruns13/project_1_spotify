@@ -30,6 +30,7 @@ Analyze various audio features of publicly available spotify top charts for the 
 </br>
 ---
 ## Findings
+
 **Does tempo significantly impact the danceability of global top songs?**</br>
 
 
@@ -48,7 +49,9 @@ There were very weak or no correlations between a song's duration and the follow
 - Rank: ![Rank by Song Duration - Global Top Songs 5/27/2022 - 6/2/2022](https://github.com/mbruns13/project_1_spotify/blob/main/images/rank_duration.png?raw=true)
 - Number of Streams: ![Song Duration by Number of Streams - Global Top Songs 5/27/2022 - 6/2/2022](https://github.com/mbruns13/project_1_spotify/blob/main/images/duration_streams.png?raw=true)
 
-Most songs in the Global Top Songs Chart between 5/27/22 and 6/2/22 were between 2.91 and 3.85 minutes long, with the average duration equal to 3.43. The songs from the same time period on the US chart were similar, with most songs lasting between 2.90 and 3.94 minutes long, with the average duration equal to 3.49.
+Most songs in the Global Top Songs Chart between 5/27/22 and 6/2/22 were between 2.91 and 3.85 minutes long, with the average duration equal to 3.43. The songs from the same time period on the US chart were similar, with most songs lasting between 2.90 and 3.94 minutes long, with the average duration equal to 3.49. The range of song durations was slightly more spread out in the US chart, which can be seen in the following figures:
+![Global vs USA Top Songs - Duration: 5/27/2022 - 6/2/2022](https://github.com/mbruns13/project_1_spotify/blob/main/images/usa_global_bar.png?raw=true)
+![Duration of Global and USA Top Songs 5/27/2022 - 6/2/2022](https://github.com/mbruns13/project_1_spotify/blob/main/images/combined_boxplot.png?raw=true)
 
 </br>
 
