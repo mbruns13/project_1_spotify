@@ -18,8 +18,8 @@ Analyze various audio features of publicly available spotify top charts for the 
 * Is there any significant relationship between a top song’s duration and its other audio audio features?
 
 ## Datasets to Be Used:
-* Publicly available spotify top charts found at charts.spotify.com/home
-* Spotify API data based on song ID for songs of interest 
+* Publicly available spotify top charts found at [charts.spotify.com](https://charts.spotify.com/charts/view/regional-global-weekly/latest)
+* [Spotify API](https://developer.spotify.com/documentation/web-api/reference/#/operations/get-several-audio-features) data based on song ID for songs of interest 
 
 ## Rough Breakdown of Tasks: 
 * Create dataframe of top songs of interest for given investigation
@@ -39,4 +39,6 @@ Analyze various audio features of publicly available spotify top charts for the 
 
 
 * **Is there any significant relationship between a top song’s duration and its other audio audio features?**</br>
-There were no strong correlations between a song's duration and the following audio features: tempo, energy, danceability, weeks on chart, rank, or number of streams. Most songs in the Global Top Songs Chart between 5/27/22 and 6/2/22 were between 2.91 and 3.85 minutes long. The songs from the same time period on the US chart were similar, with most songs lasting between 2.90 and 3.94 minutes long.
+There were no strong correlations between a song's duration and the following audio features: tempo, energy, danceability, weeks on chart, rank, or number of streams. Most songs in the Global Top Songs Chart between 5/27/22 and 6/2/22 were between 2.91 and 3.85 minutes long. The songs from the same time period on the US chart were similar, with most songs lasting between 2.90 and 3.94 minutes long.</br>
+
+Slide presentation can be found [here](https://docs.google.com/presentation/d/1emqUlGtQ6cZXMqo08uc2ZbHmale3IQClO9j39Cb1cxk/)
