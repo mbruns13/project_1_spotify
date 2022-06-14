@@ -48,6 +48,8 @@ There were very weak or no correlations between a song's duration and the follow
 - Rank: ![Rank by Song Duration - Global Top Songs 5/27/2022 - 6/2/2022](https://github.com/mbruns13/project_1_spotify/blob/main/images/rank_duration.png?raw=true)
 - Number of Streams: ![Song Duration by Number of Streams - Global Top Songs 5/27/2022 - 6/2/2022](https://github.com/mbruns13/project_1_spotify/blob/main/images/duration_streams.png?raw=true)
 
-Most songs in the Global Top Songs Chart between 5/27/22 and 6/2/22 were between 2.91 and 3.85 minutes long, with the average duration equal to 3.43. The songs from the same time period on the US chart were similar, with most songs lasting between 2.90 and 3.94 minutes long, with the average duration equal to 3.49.</br>
+Most songs in the Global Top Songs Chart between 5/27/22 and 6/2/22 were between 2.91 and 3.85 minutes long, with the average duration equal to 3.43. The songs from the same time period on the US chart were similar, with most songs lasting between 2.90 and 3.94 minutes long, with the average duration equal to 3.49.
+
+</br>
 
 Slide presentation can be found [here](https://docs.google.com/presentation/d/1emqUlGtQ6cZXMqo08uc2ZbHmale3IQClO9j39Cb1cxk/)
