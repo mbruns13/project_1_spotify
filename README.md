@@ -45,7 +45,7 @@ There were very weak or no correlations between a song's duration and the follow
 - Energy: ![Song Duration by Energy - Global Top Songs 5/27/2022 - 6/2/2022](https://github.com/mbruns13/project_1_spotify/blob/main/images/duration_energy.png?raw=true)
 - Danceability: ![Song Duration by Danceability - Global Top Songs 5/27/2022 - 6/2/2022](https://github.com/mbruns13/project_1_spotify/blob/main/images/duration_danceability.png?raw=true) 
 - Weeks on Chart: ![Song Duration by Weeks on Chart - Global Top Songs 5/27/2022 - 6/2/2022](https://github.com/mbruns13/project_1_spotify/blob/main/images/duration_weeks-on-chart.png?raw=true)
-- Rank: ![Rank by Song Duration - Global Top Songs 5/27/2022 - 6/2/2022](https://github.com/mbruns13/project_1_spotify/blob/main/images/rank_duration.png?raw=true)
+- Rank: ![Rank by Song Duration - Global Top Songs 5/27/2022 - 6/2/2022](https://github.com/mbruns13/project_1_spotify/blob/main/images/duration_rank.png?raw=true)
 - Number of Streams: ![Song Duration by Number of Streams - Global Top Songs 5/27/2022 - 6/2/2022](https://github.com/mbruns13/project_1_spotify/blob/main/images/duration_streams.png?raw=true)
 
 Most songs in the Global Top Songs Chart between 5/27/22 and 6/2/22 were between 2.91 and 3.85 minutes long, with the average duration equal to 3.43. The songs from the same time period on the US chart were similar, with most songs lasting between 2.90 and 3.94 minutes long, with the average duration equal to 3.49. The range of song durations was slightly more spread out in the US chart, which can be seen in the following figures:
@@ -60,7 +60,7 @@ Most songs in the Global Top Songs Chart between 5/27/22 and 6/2/22 were between
     - Values above 5.26 could be outliers.
     
  - USA Top Songs Duration:
-    - The lower quartile of Song Duration is: 2.9
+    - The lower quartile of Song Duration is: 2.90
     - The upper quartile of Song Duration is: 3.94
     - The interquartile range of Song Duration is: 1.04
     - The median of Song Duration is: 3.435 
