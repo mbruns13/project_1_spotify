@@ -27,8 +27,7 @@ Analyze various audio features of publicly available spotify top charts for the 
 * Loop through spotify API to pull variable of interest 
 * Basic visualizations and statistical analysis to determine interesting correlations and trends based on question
 * Choose and create useful visualizations and explain inferences 
-</br>
----
+
 ## Findings
 
 **Does tempo significantly impact the danceability of global top songs?**</br>
@@ -52,6 +51,22 @@ There were very weak or no correlations between a song's duration and the follow
 Most songs in the Global Top Songs Chart between 5/27/22 and 6/2/22 were between 2.91 and 3.85 minutes long, with the average duration equal to 3.43. The songs from the same time period on the US chart were similar, with most songs lasting between 2.90 and 3.94 minutes long, with the average duration equal to 3.49. The range of song durations was slightly more spread out in the US chart, which can be seen in the following figures:
 ![Global vs USA Top Songs - Duration: 5/27/2022 - 6/2/2022](https://github.com/mbruns13/project_1_spotify/blob/main/images/usa_global_bar.png?raw=true)
 ![Duration of Global and USA Top Songs 5/27/2022 - 6/2/2022](https://github.com/mbruns13/project_1_spotify/blob/main/images/combined_boxplot.png?raw=true)
+ - Global Top Songs Duration:
+    - The lower quartile of Song Duration is: 2.91
+    - The upper quartile of Song Duration is: 3.85
+    - The interquartile range of Song Duration is: 0.94
+    - The median of Song Duration is: 3.375 
+    - Values below 1.5 could be outliers.
+    - Values above 5.26 could be outliers.
+    
+ - USA Top Songs Duration:
+    - The lower quartile of Song Duration is: 2.9
+    - The upper quartile of Song Duration is: 3.94
+    - The interquartile range of Song Duration is: 1.04
+    - The median of Song Duration is: 3.435 
+    - Values below 1.49 could be outliers.
+    - Values above 5.35 could be outliers.
+
 
 </br>
 
