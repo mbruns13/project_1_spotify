@@ -1,6 +1,5 @@
-# Spotify Project Proposal
+# Spotify Project Proposal & Findings
 Group Project 1
-
 
 ## Project Title: 
 The Spotify API Analysis 
@@ -36,8 +35,8 @@ When looking at the Pearson correlation method for the two variables, we get a v
 If anything, the most interesting part of this investigation is the fact that there wasn’t an obvious correlation between tempo and danceability. It is likely that the other sound features used to calculate danceability have a larger effect on danceability than simply tempo alone. 
 </br></br>
 Once again we were once again surprised by the little to nonexistent correlation between variables, this time between tempo and the amount of streams a song on the top charts has. 
-![Tempo vs. Streams Scatter Plot](https://github.com/mbruns13/project_1_spotify/blob/main/images/Tempo_vs_Streams.png?raw=true) 
-![Tempo vs. Streams (Cleaned) Scatter Plot](https://github.com/mbruns13/project_1_spotify/blob/main/images/Tempo_vs_Streams_Cleaned.png?raw=true)
+</br><img src="images/Tempo_vs_Streams.png" alt="Tempo vs. Streams Scatter Plot" width="400">
+<img src="images/Tempo_vs_Streams_Cleaned.png" alt="Tempo vs. Streams (Cleaned) Scatter Plot" width="400">
 </br>
 As you can see, tempo varies widely in the top charts, but there is no significant trend appearing visually, beyond the fact that it seems songs between the range of 80-120 bpm may have a higher amount of streams than faster songs. </br>
 However, after running a linear regression on the dataset, the pearson correlation indicated a value of -0.08, meaning there is likely a nonexistent correlation between tempo and streams. Similarly, the R squared for the regression model was 0.07%, so the regression doesn’t substantively represent the variability observed in the amount of streams of a track. </br>
@@ -45,44 +44,48 @@ In an effort to see if outlier data points were skewing the relationship, I remo
 </br>
 The tempo and streams scatter plot appeared visually to have a lognormal distribution, so I applied a box-cox power transform to make the data more Gaussian-like, or normal. 
 </br>
-![Streams Histogram](https://github.com/mbruns13/project_1_spotify/blob/main/images/Streams%20Histogram.png?raw=true)
-![Tempo vs. Streams (Transformed)](https://github.com/mbruns13/project_1_spotify/blob/main/images/Tempo_vs_Streams(Transformed).png?raw=true)
+<img src="images/Streams%20Histogram.png" alt="Streams Histogram" width="400">
+<img src="images/Tempo_vs_Streams(Transformed).png" alt="Tempo vs. Streams (Transformed)" width="400">
 </br>
 Above is the histogram of streams vs frequency on the left, which looked like it could be some type of lognormal distribution. However, after plotting the transformed stream data against tempo, it is obvious on the scatter plot on the right that there is no correlation between the variables. Of course, the pearson correlation value from the last slide also indicated there was no correlation between the variables, but this visualization also shows us that even with a power transform, the data is not Gaussian-like, and the only conclusion we can draw is that there is no correlation between tempo and streams. 
-
+</br>[See code [here](song_data_sydney.ipynb)]
 
 
 **Is there any significant relationship between the danceability and energy of global top songs?**</br>
 
 
+</br>[See code [here](danceability_energy.ipynb)]
+
 **Does energy help us predict the valence of top songs?**</br> 
 
+
+</br>[See code [here](slone_spotify.ipynb)]
 
 **Is there any significant relationship between a top song’s duration and its other audio audio features?**</br>
 There were very weak or no correlations between a song's duration and the following audio features: 
 - Tempo:</br>
-<img src="images/duration_tempo.png" alt="Song Duration by Tempo - Global Top Songs 5/27/2022 - 6/2/2022" width="350">
+<img src="images/duration_tempo.png" alt="Song Duration by Tempo - Global Top Songs 5/27/2022 - 6/2/2022" width="400">
 
 
 - Energy:</br>
-<img src="images/duration_energy.png" alt="Song Duration by Energy - Global Top Songs 5/27/2022 - 6/2/2022" width="350">
+<img src="images/duration_energy.png" alt="Song Duration by Energy - Global Top Songs 5/27/2022 - 6/2/2022" width="400">
 
 - Danceability:</br> 
-<img src="images/duration_danceability.png" alt="Song Duration by Danceability - Global Top Songs 5/27/2022 - 6/2/2022" width="350">
+<img src="images/duration_danceability.png" alt="Song Duration by Danceability - Global Top Songs 5/27/2022 - 6/2/2022" width="400">
 
 - Weeks on Chart:</br>
-<img src="images/duration_weeks-on-chart.png" alt="Song Duration by Weeks on Chart - Global Top Songs 5/27/2022 - 6/2/2022" width="350">
+<img src="images/duration_weeks-on-chart.png" alt="Song Duration by Weeks on Chart - Global Top Songs 5/27/2022 - 6/2/2022" width="400">
 
 - Rank:</br>
-<img src="images/duration_rank.png" alt="Rank by Song Duration - Global Top Songs 5/27/2022 - 6/2/2022" width="350">
+<img src="images/duration_rank.png" alt="Rank by Song Duration - Global Top Songs 5/27/2022 - 6/2/2022" width="400">
 
 - Number of Streams:</br>
-<img src="images/duration_streams.png" alt="Song Duration by Number of Streams - Global Top Songs 5/27/2022 - 6/2/2022" width="350">
+<img src="images/duration_streams.png" alt="Song Duration by Number of Streams - Global Top Songs 5/27/2022 - 6/2/2022" width="400">
 
 Most songs in the Global Top Songs Chart between 5/27/22 and 6/2/22 were between 2.91 and 3.85 minutes long, with the average duration equal to 3.43. The songs from the same time period on the US chart were similar, with most songs lasting between 2.90 and 3.94 minutes long, with the average duration equal to 3.49. The range of song durations was slightly more spread out in the US chart, which can be seen in the following figures:
 </br>
-<img src="images/usa_global_bar.png" alt="Global vs USA Top Songs - Duration: 5/27/2022 - 6/2/2022" width="350">
-<img src="images/combined_boxplot.png" alt="Duration of Global and USA Top Songs 5/27/2022 - 6/2/2022" width="350">
+<img src="images/usa_global_bar.png" alt="Global vs USA Top Songs - Duration: 5/27/2022 - 6/2/2022" width="400">
+<img src="images/combined_boxplot.png" alt="Duration of Global and USA Top Songs 5/27/2022 - 6/2/2022" width="400">
 
  - Global Top Songs Duration:
     - The lower quartile of Song Duration is: 2.91
