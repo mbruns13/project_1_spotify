@@ -60,16 +60,30 @@ Above is the histogram of streams vs frequency on the left, which looked like it
 
 **Is there any significant relationship between a top song’s duration and its other audio audio features?**</br>
 There were very weak or no correlations between a song's duration and the following audio features: 
-- Tempo: ![Song Duration by Tempo - Global Top Songs 5/27/2022 - 6/2/2022](https://github.com/mbruns13/project_1_spotify/blob/main/images/duration_tempo.png?raw=true)
-- Energy: ![Song Duration by Energy - Global Top Songs 5/27/2022 - 6/2/2022](https://github.com/mbruns13/project_1_spotify/blob/main/images/duration_energy.png?raw=true)
-- Danceability: ![Song Duration by Danceability - Global Top Songs 5/27/2022 - 6/2/2022](https://github.com/mbruns13/project_1_spotify/blob/main/images/duration_danceability.png?raw=true) 
-- Weeks on Chart: ![Song Duration by Weeks on Chart - Global Top Songs 5/27/2022 - 6/2/2022](https://github.com/mbruns13/project_1_spotify/blob/main/images/duration_weeks-on-chart.png?raw=true)
-- Rank: ![Rank by Song Duration - Global Top Songs 5/27/2022 - 6/2/2022](https://github.com/mbruns13/project_1_spotify/blob/main/images/duration_rank.png?raw=true)
-- Number of Streams: ![Song Duration by Number of Streams - Global Top Songs 5/27/2022 - 6/2/2022](https://github.com/mbruns13/project_1_spotify/blob/main/images/duration_streams.png?raw=true)
+- Tempo:</br>
+<img src="images/duration_tempo.png" alt="Song Duration by Tempo - Global Top Songs 5/27/2022 - 6/2/2022" width="350">
+
+
+- Energy:</br>
+<img src="images/duration_energy.png" alt="Song Duration by Energy - Global Top Songs 5/27/2022 - 6/2/2022" width="350">
+
+- Danceability:</br> 
+<img src="images/duration_danceability.png" alt="Song Duration by Danceability - Global Top Songs 5/27/2022 - 6/2/2022" width="350">
+
+- Weeks on Chart:</br>
+<img src="images/duration_weeks-on-chart.png" alt="Song Duration by Weeks on Chart - Global Top Songs 5/27/2022 - 6/2/2022" width="350">
+
+- Rank:</br>
+<img src="images/duration_rank.png" alt="Rank by Song Duration - Global Top Songs 5/27/2022 - 6/2/2022" width="350">
+
+- Number of Streams:</br>
+<img src="images/duration_streams.png" alt="Song Duration by Number of Streams - Global Top Songs 5/27/2022 - 6/2/2022" width="350">
 
 Most songs in the Global Top Songs Chart between 5/27/22 and 6/2/22 were between 2.91 and 3.85 minutes long, with the average duration equal to 3.43. The songs from the same time period on the US chart were similar, with most songs lasting between 2.90 and 3.94 minutes long, with the average duration equal to 3.49. The range of song durations was slightly more spread out in the US chart, which can be seen in the following figures:
-![Global vs USA Top Songs - Duration: 5/27/2022 - 6/2/2022](https://github.com/mbruns13/project_1_spotify/blob/main/images/usa_global_bar.png?raw=true)
-![Duration of Global and USA Top Songs 5/27/2022 - 6/2/2022](https://github.com/mbruns13/project_1_spotify/blob/main/images/combined_boxplot.png?raw=true)
+</br>
+<img src="images/usa_global_bar.png" alt="Global vs USA Top Songs - Duration: 5/27/2022 - 6/2/2022" width="350">
+<img src="images/combined_boxplot.png" alt="Duration of Global and USA Top Songs 5/27/2022 - 6/2/2022" width="350">
+
  - Global Top Songs Duration:
     - The lower quartile of Song Duration is: 2.91
     - The upper quartile of Song Duration is: 3.85
