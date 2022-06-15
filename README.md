@@ -63,26 +63,16 @@ Above is the histogram of streams vs frequency on the left, which looked like it
 
 **Is there any significant relationship between a top song’s duration and its other audio audio features?**</br>
 There were very weak or no correlations between a song's duration and the following audio features: 
-- Tempo:</br>
-<img src="images/duration_tempo.png" alt="Song Duration by Tempo - Global Top Songs 5/27/2022 - 6/2/2022" width="400">
+- [Tempo](images/duration_tempo.png)
+- [Energy](images/duration_energy.png)
+- [Danceability](images/duration_danceability.png)
+- [Weeks on Chart](images/duration_weeks-on-chart.png)
+- [Rank](images/duration_rank.png)
+- [Number of Streams](images/duration_streams.png)
 
-
-- Energy:</br>
-<img src="images/duration_energy.png" alt="Song Duration by Energy - Global Top Songs 5/27/2022 - 6/2/2022" width="400">
-
-- Danceability:</br> 
-<img src="images/duration_danceability.png" alt="Song Duration by Danceability - Global Top Songs 5/27/2022 - 6/2/2022" width="400">
-
-- Weeks on Chart:</br>
-<img src="images/duration_weeks-on-chart.png" alt="Song Duration by Weeks on Chart - Global Top Songs 5/27/2022 - 6/2/2022" width="400">
-
-- Rank:</br>
-<img src="images/duration_rank.png" alt="Rank by Song Duration - Global Top Songs 5/27/2022 - 6/2/2022" width="400">
-
-- Number of Streams:</br>
-<img src="images/duration_streams.png" alt="Song Duration by Number of Streams - Global Top Songs 5/27/2022 - 6/2/2022" width="400">
-
-Most songs in the Global Top Songs Chart between 5/27/22 and 6/2/22 were between 2.91 and 3.85 minutes long, with the average duration equal to 3.43. The songs from the same time period on the US chart were similar, with most songs lasting between 2.90 and 3.94 minutes long, with the average duration equal to 3.49. The range of song durations was slightly more spread out in the US chart, which can be seen in the following figures:
+Most songs in the Global Top Songs Chart between 5/27/22 and 6/2/22 were between 2.91 and 3.85 minutes long, with the average duration equal to 3.43. 
+</br>
+The songs from the same time period on the US chart were similar, with most songs lasting between 2.90 and 3.94 minutes long, with the average duration equal to 3.49. The range of song durations was slightly more spread out in the US chart, which can be seen in the following figures:
 </br>
 <img src="images/usa_global_bar.png" alt="Global vs USA Top Songs - Duration: 5/27/2022 - 6/2/2022" width="400">
 <img src="images/combined_boxplot.png" alt="Duration of Global and USA Top Songs 5/27/2022 - 6/2/2022" width="400">
@@ -102,7 +92,7 @@ Most songs in the Global Top Songs Chart between 5/27/22 and 6/2/22 were between
     - The median of Song Duration is: 3.435 
     - Values below 1.49 could be outliers.
     - Values above 5.35 could be outliers.
-
+</br>[See code [here](song_duration.ipynb)]
 
 </br>
 
