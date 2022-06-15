@@ -12,7 +12,7 @@ Analyze various audio features of publicly available spotify top charts for the 
 
 ## Research Questions to answer: 
 * Does tempo significantly impact the danceability of global top songs?
-* Is there any significant relationship between the danceability and energy of global top songs?
+* Is there any significant relationship between top global songs and their danceability, energy, and liveness?
 * Does energy help us predict the valence of top songs? 
 * Is there any significant relationship between a top song’s duration and its other audio audio features?
 
@@ -34,7 +34,7 @@ At first glance, the [scatter plot](https://github.com/mbruns13/project_1_spotif
 When looking at the Pearson correlation method for the two variables, we get a value of -0.21, which indicates a very weakly negative relationship between the tempo and danceability. This could mean that as tempo increases, songs might get less danceable, but because of the weak correlation we cannot confidently conclude this.
 If anything, the most interesting part of this investigation is the fact that there wasn’t an obvious correlation between tempo and danceability. It is likely that the other sound features used to calculate danceability have a larger effect on danceability than simply tempo alone. 
 </br></br>
-Once again we were once again surprised by the little to nonexistent correlation between variables, this time between tempo and the amount of streams a song on the top charts has. 
+Once again, we were surprised by the little to nonexistent correlation between variables, this time between tempo and the amount of streams a song on the top charts has. 
 </br><img src="images/Tempo_vs_Streams.png" alt="Tempo vs. Streams Scatter Plot" width="400">
 <img src="images/Tempo_vs_Streams_Cleaned.png" alt="Tempo vs. Streams (Cleaned) Scatter Plot" width="400">
 </br>
@@ -51,8 +51,8 @@ Above is the histogram of streams vs frequency on the left, which looked like it
 </br>[See code [here](song_data_sydney.ipynb)]
 
 
-**Is there any significant relationship between the danceability and energy of global top songs?**</br>
-
+**Is there any significant relationship between top global songs and their danceability, energy, and liveness?**</br>
+When looking at the Spotify top 200 global song chart, I was curious to see if they had any relationship with their respective audio features: danceability, energy, and liveness. My goal was to determine whether or not songs with high values of danceability, energy, and liveness tended to be more popular than those with lower values, or vice versa. In order to find the answers I needed, I created a [script](maite_danceability_energy.ipynb) to generate multiple statistical analyses and representations of the song features in questions using figures containing scatterplots, boxplots, and some bar charts.
 
 </br>[See code [here](maite_danceability_energy.ipynb)]
 
