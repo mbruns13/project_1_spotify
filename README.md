@@ -54,7 +54,7 @@ Above is the histogram of streams vs frequency on the left, which looked like it
 **Is there any significant relationship between the danceability and energy of global top songs?**</br>
 
 
-</br>[See code [here](danceability_energy.ipynb)]
+</br>[See code [here](maite_danceability_energy.ipynb)]
 
 **Does energy help us predict the valence of top songs?**</br> 
 
