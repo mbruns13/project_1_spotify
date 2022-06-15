@@ -118,13 +118,14 @@ Lastly, I generated individual boxplots of each song feature and generated calcu
 
 **Is there any significant relationship between a top song’s duration and its other audio audio features?**
 
-There were very weak or no correlations between a song's duration and the following audio features: 
-- [Tempo](images/duration_tempo.png)
-- [Energy](images/duration_energy.png)
-- [Danceability](images/duration_danceability.png)
-- [Weeks on Chart](images/duration_weeks-on-chart.png)
-- [Rank](images/duration_rank.png)
-- [Number of Streams](images/duration_streams.png)
+I was assuming the data would show some relationship between song duration and [tempo](images/duration_tempo.png), [energy](images/duration_energy.png), and/or [danceability](images/duration_danceability.png), thinking that the longer a song was, the lower any of those values would be. However, calculating linear regressions between duration and these other three variables showed that there were very weak or no correlations.
+
+I had expected to find more of a relationship between a song's duration and it's number of streams or rank within the chart, but when calculating linear regressions between those two sets of variables, both r values were very low (r=.03 for [Duration vs. Rank](images/duration_rank.png), r=-.01 for [Duration vs. Number of Streams](images/duration_streams.png))
+
+I also binned songs in the Global Top Songs Chart by their rank and looked at the average duration within those groups, but there wasn’t much of a trend there either
+<img src="images/ranking_avg_duration_bar.png" alt="Global Top Songs 5/27/2022 - 6/2/2022: Song Ranking by Average Song Duration" width="400">
+
+The largest difference between these means was 0.29 minutes, or 17.4 seconds, between bin 1 and bin 3.
 
 Most songs in the Global Top Songs Chart between 5/27/22 and 6/2/22 were between 2.91 and 3.85 minutes long, with the average duration equal to 3.43. 
 
