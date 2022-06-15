@@ -31,6 +31,25 @@ Analyze various audio features of publicly available spotify top charts for the 
 ## Findings
 
 **Does tempo significantly impact the danceability of global top songs?**</br>
+At first glance, the [scatter plot](https://github.com/mbruns13/project_1_spotify/blob/main/images/Tempo_vs_Danceability.png) representing the relationship between tempo and danceability appears to have little to no correlation. This is likely true, as the linear regression shows a slope of 0, though a slight negative relationship. Based on the R squared value of this regression, only 4.5% of the variability observed in the danceability of a track is explained by the regression model. At best, this tells us that there is either an extremely weak or more likely nonexistent relationship between tempo and danceability, which was surprising given the fact that intuitively, the speed or pace of a song would have some impact on how easy it is to dance to.</br> 
+When looking at the Pearson correlation method for the two variables, we get a value of -0.21, which indicates a very weakly negative relationship between the tempo and danceability. This could mean that as tempo increases, songs might get less danceable, but because of the weak correlation we cannot confidently conclude this.
+If anything, the most interesting part of this investigation is the fact that there wasn’t an obvious correlation between tempo and danceability. It is likely that the other sound features used to calculate danceability have a larger effect on danceability than simply tempo alone. 
+</br></br>
+Once again we were once again surprised by the little to nonexistent correlation between variables, this time between tempo and the amount of streams a song on the top charts has. 
+![Tempo vs. Streams Scatter Plot](https://github.com/mbruns13/project_1_spotify/blob/main/images/Tempo_vs_Streams.png?raw=true) 
+![Tempo vs. Streams (Cleaned) Scatter Plot](https://github.com/mbruns13/project_1_spotify/blob/main/images/Tempo_vs_Streams_Cleaned.png?raw=true)
+</br>
+As you can see, tempo varies widely in the top charts, but there is no significant trend appearing visually, beyond the fact that it seems songs between the range of 80-120 bpm may have a higher amount of streams than faster songs. </br>
+However, after running a linear regression on the dataset, the pearson correlation indicated a value of -0.08, meaning there is likely a nonexistent correlation between tempo and streams. Similarly, the R squared for the regression model was 0.07%, so the regression doesn’t substantively represent the variability observed in the amount of streams of a track. </br>
+In an effort to see if outlier data points were skewing the relationship, I removed the song “As it Was” by Harry Styles, which had the highest amount of streams by far and an incredibly fast tempo at 173 bpm. This increased the pearson correlation a bit, but is still negligible at -0.17, indicating a extremely weak negative correlation between tempo and streams. The R squared value remained weak as well, though also slightly better than before, at 2.9%. We can conclude that there is no significant relationship between tempo and streams. 
+</br>
+The tempo and streams scatter plot appeared visually to have a lognormal distribution, so I applied a box-cox power transform to make the data more Gaussian-like, or normal. 
+</br>
+![Streams Histogram](https://github.com/mbruns13/project_1_spotify/blob/main/images/Streams%20Histogram.png?raw=true)
+![Tempo vs. Streams (Transformed)](https://github.com/mbruns13/project_1_spotify/blob/main/images/Tempo_vs_Streams(Transformed).png?raw=true)
+</br>
+Above is the histogram of streams vs frequency on the left, which looked like it could be some type of lognormal distribution. However, after plotting the transformed stream data against tempo, it is obvious on the scatter plot on the right that there is no correlation between the variables. Of course, the pearson correlation value from the last slide also indicated there was no correlation between the variables, but this visualization also shows us that even with a power transform, the data is not Gaussian-like, and the only conclusion we can draw is that there is no correlation between tempo and streams. 
+
 
 
 **Is there any significant relationship between the danceability and energy of global top songs?**</br>
