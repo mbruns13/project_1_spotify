@@ -5,7 +5,7 @@ Group Project 1
 The Spotify API Analysis 
 
 ## Team Members: 
-Molly Bruns, Sydney Cohen, Maite Rivas,  B Slone
+Molly Bruns, Sydney Cohen, Maite Rivas, B Slone
 
 ## Project Description/Outline: 
 Analyze various audio features of publicly available spotify top charts for the week of June 2nd 2022 to see how a given audio feature is represented in top songs 
@@ -92,8 +92,8 @@ The songs from the same time period on the US chart were similar, with most song
     - The median of Song Duration is: 3.435 
     - Values below 1.49 could be outliers.
     - Values above 5.35 could be outliers.
-</br>[See code [here](song_duration.ipynb)]
 
+[See code [here](song_duration.ipynb)]
 </br>
-
+</br>
 Slide presentation can be found [here](https://docs.google.com/presentation/d/1emqUlGtQ6cZXMqo08uc2ZbHmale3IQClO9j39Cb1cxk/)
