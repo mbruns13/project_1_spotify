@@ -68,7 +68,7 @@ Danceability, Energy and Liveness scatterplots when compared to a song's number 
 <img src="images/Energy_vs_Streams.png" alt="Energy vs. Streams Scatter Plot" width="400">
 <img src="images/Liveness_vs_Streams.png" alt="Liveness vs. Streams Scatter Plot" width="400">
 
-After finding no correlation between the song features (danceability, energy, liveness) and the number of streams a top song has, I decided to take a closer look at how a song's danceability might predict the energy. For example, if a song is more danceable (values closer to 1), is it also more energetic? I predicted they might have a positive correlation between them, and they did. In fact, danceability and energy had the strongest r value at 0.186 compared to the r values when comparing them to the number of streams a song had. However, the r value is still considered to be weak because it is far closer to 0 than 1, so we cannot assume that the danceability of a song has any significant impact on a song's energy.
+After finding no correlation between the song features (danceability, energy, liveness) and the number of streams a top song has, I decided to take a closer look at how a song's danceability might predict the energy. For example, if a song is more danceable (values closer to 1), is it also more energetic? I predicted they might have a positive correlation between them, and they did. In fact, danceability and energy had the strongest r value at 0.186 compared to the r values above. However, the r value is still considered to be weak because it is far closer to 0 than 1, so we cannot assume that the danceability of a song has any significant impact on a song's energy.
 
 Danceability compared to a song's Energy scatterplot:
 
@@ -107,7 +107,7 @@ Lastly, I generated individual boxplots of each song feature and generated calcu
    - Values below -0.03 could be outliers.
    - Values above 0.29 could be outliers.
 
-*See code [here](maite_danceability_energy.ipynb)*
+*See Maite's code [here](maite_danceability_energy.ipynb)*
 
 **Does energy help us predict the valence of top songs?**
 
