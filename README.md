@@ -53,7 +53,7 @@ The tempo and streams scatter plot appeared visually to have a lognormal distrib
 
 Above is the histogram of streams vs frequency on the left, which looked like it could be some type of lognormal distribution. However, after plotting the transformed stream data against tempo, it is obvious on the scatter plot on the right that there is no correlation between the variables. Of course, the pearson correlation value from the last slide also indicated there was no correlation between the variables, but this visualization also shows us that even with a power transform, the data is not Gaussian-like, and the only conclusion we can draw is that there is no correlation between tempo and streams. 
 
-[See code [here](song_data_sydney.ipynb)]
+*See code [here](song_data_sydney.ipynb)*
 
 
 **Is there any significant relationship between top global songs and their danceability, energy, and liveness?**
@@ -107,14 +107,14 @@ Lastly, I generated individual boxplots of each song feature and generated calcu
    - Values below -0.03 could be outliers.
    - Values above 0.29 could be outliers.
 
-[See code [here](maite_danceability_energy.ipynb)]
+*See code [here](maite_danceability_energy.ipynb)*
 
 **Does energy help us predict the valence of top songs?**
 
 [Slone to add synopsis here]
 
 
-[See code [here](slone_spotify.ipynb)]
+*See code [here](slone_spotify.ipynb)*
 
 **Is there any significant relationship between a top song’s duration and its other audio audio features?**
 
@@ -149,7 +149,7 @@ The songs from the same time period on the US chart were similar, with most song
     - Values below 1.49 could be outliers.
     - Values above 5.35 could be outliers.
 
-[See code [here](song_duration.ipynb)]
+*See code [here](song_duration.ipynb)*
 
 
 Slide presentation can be found [here](https://docs.google.com/presentation/d/1emqUlGtQ6cZXMqo08uc2ZbHmale3IQClO9j39Cb1cxk/)
