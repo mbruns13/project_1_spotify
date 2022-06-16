@@ -38,17 +38,19 @@ If anything, the most interesting part of this investigation is the fact that th
 
 
 Once again, we were surprised by the little to nonexistent correlation between variables, this time between tempo and the amount of streams a song on the top charts has. 
-<br/><img src="images/Tempo_vs_Streams.png" alt="Tempo vs. Streams Scatter Plot" width="400">
+
+<img src="images/Tempo_vs_Streams.png" alt="Tempo vs. Streams Scatter Plot" width="400">
 <img src="images/Tempo_vs_Streams_Cleaned.png" alt="Tempo vs. Streams (Cleaned) Scatter Plot" width="400">
 
-As you can see, tempo varies widely in the top charts, but there is no significant trend appearing visually, beyond the fact that it seems songs between the range of 80-120 bpm may have a higher amount of streams than faster songs. <br/>
+As you can see, tempo varies widely in the top charts, but there is no significant trend appearing visually, beyond the fact that it seems songs between the range of 80-120 bpm may have a higher amount of streams than faster songs.
+
 However, after running a linear regression on the dataset, the pearson correlation indicated a value of -0.08, meaning there is likely a nonexistent correlation between tempo and streams. Similarly, the R squared for the regression model was 0.07%, so the regression doesn’t substantively represent the variability observed in the amount of streams of a track. 
 
 In an effort to see if outlier data points were skewing the relationship, I removed the song “As it Was” by Harry Styles, which had the highest amount of streams by far and an incredibly fast tempo at 173 bpm. This increased the pearson correlation a bit, but is still negligible at -0.17, indicating a extremely weak negative correlation between tempo and streams. The R squared value remained weak as well, though also slightly better than before, at 2.9%. We can conclude that there is no significant relationship between tempo and streams. 
 
 The tempo and streams scatter plot appeared visually to have a lognormal distribution, so I applied a box-cox power transform to make the data more Gaussian-like, or normal. 
 
-<img src="images/Streams%20Histogram.png" alt="Streams Histogram" width="400">
+<img src="images/Streams%20Histogram.png" alt="Streams Histogram" width="400"> 
 <img src="images/Tempo_vs_Streams(Transformed).png" alt="Tempo vs. Streams (Transformed)" width="400">
 
 Above is the histogram of streams vs frequency on the left, which looked like it could be some type of lognormal distribution. However, after plotting the transformed stream data against tempo, it is obvious on the scatter plot on the right that there is no correlation between the variables. Of course, the pearson correlation value from the last slide also indicated there was no correlation between the variables, but this visualization also shows us that even with a power transform, the data is not Gaussian-like, and the only conclusion we can draw is that there is no correlation between tempo and streams. 
@@ -153,4 +155,4 @@ The songs from the same time period on the US chart were similar, with most song
 *See code [here](song_duration.ipynb)*
 
 
-Slide presentation can be found [here](https://docs.google.com/presentation/d/1emqUlGtQ6cZXMqo08uc2ZbHmale3IQClO9j39Cb1cxk/)
+Slide presentation can be found [here](https://docs.google.com/presentation/d/1emqUlGtQ6cZXMqo08uc2ZbHmale3IQClO9j39Cb1cxk/edit?usp=sharing)
