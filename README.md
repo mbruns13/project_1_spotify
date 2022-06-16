@@ -118,7 +118,7 @@ Lastly, I generated individual boxplots of each song feature and generated calcu
 
 **Is there any significant relationship between a top song’s duration and its other audio audio features?**
 
-I was assuming the data would show some relationship between song duration and [tempo](images/duration_tempo.png), [energy](images/duration_energy.png), and/or [danceability](images/duration_danceability.png), thinking that the longer a song was, the lower any of those values would be. However, calculating linear regressions between duration and these other three variables showed that there were very weak or no correlations.
+I was assuming the data would show some relationship between song duration and [tempo](images/duration_tempo.png), [energy](images/duration_energy.png), and/or [danceability](images/duration_danceability.png), thinking that the longer a song was, the lower any of those values would be. However, calculating linear regressions between duration and these other three variables showed that there were very weak or no linear correlations.
 
 I had expected to find more of a relationship between a song's duration and it's number of streams or rank within the chart, but when calculating linear regressions between those two sets of variables, both r values were very low (r=.03 for [Duration vs. Rank](images/duration_rank.png), r=-.01 for [Duration vs. Number of Streams](images/duration_streams.png))
 
