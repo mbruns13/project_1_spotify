@@ -38,19 +38,17 @@ If anything, the most interesting part of this investigation is the fact that th
 
 
 Once again, we were surprised by the little to nonexistent correlation between variables, this time between tempo and the amount of streams a song on the top charts has. 
-
-<img src="images/Tempo_vs_Streams.png" alt="Tempo vs. Streams Scatter Plot" width="400">
+<br/><img src="images/Tempo_vs_Streams.png" alt="Tempo vs. Streams Scatter Plot" width="400">
 <img src="images/Tempo_vs_Streams_Cleaned.png" alt="Tempo vs. Streams (Cleaned) Scatter Plot" width="400">
 
-As you can see, tempo varies widely in the top charts, but there is no significant trend appearing visually, beyond the fact that it seems songs between the range of 80-120 bpm may have a higher amount of streams than faster songs.
-
+As you can see, tempo varies widely in the top charts, but there is no significant trend appearing visually, beyond the fact that it seems songs between the range of 80-120 bpm may have a higher amount of streams than faster songs. <br/>
 However, after running a linear regression on the dataset, the pearson correlation indicated a value of -0.08, meaning there is likely a nonexistent correlation between tempo and streams. Similarly, the R squared for the regression model was 0.07%, so the regression doesn’t substantively represent the variability observed in the amount of streams of a track. 
 
 In an effort to see if outlier data points were skewing the relationship, I removed the song “As it Was” by Harry Styles, which had the highest amount of streams by far and an incredibly fast tempo at 173 bpm. This increased the pearson correlation a bit, but is still negligible at -0.17, indicating a extremely weak negative correlation between tempo and streams. The R squared value remained weak as well, though also slightly better than before, at 2.9%. We can conclude that there is no significant relationship between tempo and streams. 
 
 The tempo and streams scatter plot appeared visually to have a lognormal distribution, so I applied a box-cox power transform to make the data more Gaussian-like, or normal. 
 
-<img src="images/Streams%20Histogram.png" alt="Streams Histogram" width="400"> 
+<img src="images/Streams%20Histogram.png" alt="Streams Histogram" width="400">
 <img src="images/Tempo_vs_Streams(Transformed).png" alt="Tempo vs. Streams (Transformed)" width="400">
 
 Above is the histogram of streams vs frequency on the left, which looked like it could be some type of lognormal distribution. However, after plotting the transformed stream data against tempo, it is obvious on the scatter plot on the right that there is no correlation between the variables. Of course, the pearson correlation value from the last slide also indicated there was no correlation between the variables, but this visualization also shows us that even with a power transform, the data is not Gaussian-like, and the only conclusion we can draw is that there is no correlation between tempo and streams. 
@@ -113,10 +111,20 @@ Lastly, I generated individual boxplots of each song feature and generated calcu
 
 **Does energy help us predict the valence of top songs?**
 
-[Slone to add synopsis here]
+For my portion of this analysis, I was interested in learning more about Spotify’s audio feature, “valence.” Valence is defined as a song’s conveyed positiveness, measured on a scale from 0.0 (saddest) to 1.0 (happiest). Spotify describes songs with high valence scores as being “happy, cheerful, and euphoric.” Songs with low valence scores are considered to be more “sad, angry, and depressed.” I was intrigued by this variable because it was loosely defined with no considered features named, and because a song’s perceived happiness or sadness is usually based on a listener’s taste. To dig into this, I wanted to see if any of the other audio features might predict valence scores, and give me a better understanding of what valence means within these global top 40 songs. I hypothesized that energy scores would be positively related with valence scores within this dataset. I selected energy because it was a well defined variable and because I hypothesized that more energy would correlate to higher positivity ratings in this dataset. Energy, which Maite already defined, is stated as the perceptual measure of intensity and activity, on a scale from 0.0 to 1.0, and the features considered in this variable include dynamic range, perceived loudness, timbre (texture). 
 
+To show what each variable looks like, below are the histograms here for both, with the scores on the x axis and the number of songs per score on the y axis. From these histograms we can see that in this dataset, listeners have a clear preference to higher energy songs, with a mean energy score, 0.66, but there isn’t as a clear a preference in the top songs for  valence (happy or sad), where the mean is 0.51, and its standard deviation is half the mean at .23, making the distribution very wide. .50 in this case is a neutral positivity rating. 
 
-*See code [here](slone_spotify.ipynb)*
+<img src="images/valence_energy_hist.png" alt="Valence and Energy histograms" width="400">
+
+So, does energy predict valence scores? No it does not. The first scatter plot, valence vs. energy, I have energy scores on the x axis, and valence scores on the y axis. I ran a linear regression, and fit that line on top of my scatter plot as you can see, and this particular relationship has a p value of 1.86, and therefore I cannot reject the null hypothesis. Any trends I might be seeing here are most likely due to chance. The r value here is 0.33, which tells me that my slope isn’t terribly steep either. After my initial hypothesis was rejected, I looked at a slew of other audio features and couldn’t find any predictor variables. I am also including here my Danceability vs Valence plot, with valence on the x-axis and danceability on the y-axis. In this particular regression, I had a p value of 0.43, and an r value of 0.48, showing that danceability also does not predict valence scores, despite the slope being slightly steeper than the first plos.
+
+<img src="images/valence_energy_plotB.png" alt="Valence vs Energy plot" width="400">
+<img src="images/dance_valance_plotA.png" alt="Danceability vs Valence plot" width="400">
+
+After my exploratory analysis, I still don’t really know what is actually under the hood of the valence variable. Furthermore, even though I found that energy did not predict higher valence scores (higher positivity ratings), it finding wasn't surprising after seeing how the valence variable wasn’t very sensitive in this dataset. If I were to further investigate this, I would like to look at valence in other genres, like “folk” or “country” to see if there are any predictive audio features for valence scores there. I would also like to look at Apple Music’s API to see if they define what’s a happy or sad song more clearly than spotify does. 
+
+*See Slone's code [here](slone_spotify.ipynb)*
 
 **Is there any significant relationship between a top song’s duration and its other audio audio features?**
 
@@ -155,4 +163,4 @@ The songs from the same time period on the US chart were similar, with most song
 *See code [here](song_duration.ipynb)*
 
 
-Slide presentation can be found [here](https://docs.google.com/presentation/d/1emqUlGtQ6cZXMqo08uc2ZbHmale3IQClO9j39Cb1cxk/edit?usp=sharing)
+Slide presentation can be found [here](https://docs.google.com/presentation/d/1emqUlGtQ6cZXMqo08uc2ZbHmale3IQClO9j39Cb1cxk/)
